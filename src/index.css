@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+:root {
+  font-family: "Lexend", sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-weight: 150;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+}
+
+header{
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+  animation: fade-in 0.3s;
+}
+
+img{
+  border-radius: 1rem;
+  animation: fade-down 0.5s;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; 
+  padding-bottom: 1.5rem; 
+}
+
+
+
+.charactersList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 1.5rem; 
+
+}
+
+
+.characterInfo{
+  margin: 0;
+  padding: 0;
+  animation: fade-down 0.7s;
+}
+
+.filterOptions{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: end;
+  box-shadow: rgba(255, 255, 255, 0.16) 0px 4px 4px 0px;
+  padding-bottom: 1rem;
+  animation: fade-down 0.3s;
+}
+
+.searchName{
+  display: flex;
+
+}
+.searchName label {
+  margin-right: 5px; /* Optional: Adjust the space between label and input */
+}
+
+.dropdownGender > label, .dropdownSpec > label, .dropdownStatus > label{
+  margin-right: 5px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
